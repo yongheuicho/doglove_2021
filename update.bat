@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add netlify badge"
+git commit -m "start doglove website"
 git push -u origin master
