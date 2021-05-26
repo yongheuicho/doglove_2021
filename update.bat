@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add dog & cat photos"
+git commit -m "add nav & footer"
 git push -u origin master
