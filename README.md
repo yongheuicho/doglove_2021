@@ -1,6 +1,6 @@
-# doglove
+# 강아지와 고양이의 동행
 
-> Dogs and cats information for everyone
+> 강아지와 고양이에 대한 모든 정보를 볼 수 있는 곳
 
 # Website Domain Name
 
