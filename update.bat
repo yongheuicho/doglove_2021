@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add domain name in ReadMe.md"
+git commit -m "add Bulma CSS"
 git push -u origin master
