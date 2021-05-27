@@ -18,15 +18,25 @@
             <p>강아지(Dog) 정보</p>
           </div>
           <div class="message-body">
-            <div class="content is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bulldog_adult_male.jpg/220px-Bulldog_adult_male.jpg"
-                  alt=""
-                />
-              </figure>
+            <div class="columns">
+              <div class="column">
+                <figure class="image container is-128x128">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bulldog_adult_male.jpg/220px-Bulldog_adult_male.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image container is-128x128">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brooks_Chase_Ranger_of_Jolly_Dogs_Jack_Russell.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
             </div>
-            <div class="content">
+            <div class="content has-text-justified">
               생물학적으로는 늑대와 완전한 동종(同種)이다. 개와 야생 늑대의
               유전적 차이는 불과 0.04% 미만으로, 인간의 인종간 유전적 차이인
               0.1%보다도 적다. 개가 인류와 함께 하게 된 것은 계통 전체의 역사에
@@ -50,18 +60,18 @@
           </div>
           <div class="message-body">
             <div class="columns">
-              <div class="column is-flex is-justify-content-center">
-                <figure class="image is-128x128">
+              <div class="column">
+                <figure class="image container is-128x128">
                   <img src="~assets/cat.jpg" alt="" />
                 </figure>
               </div>
-              <div class="column is-flex is-justify-content-center">
-                <figure class="image is-128x128">
+              <div class="column">
+                <figure class="image cotainer is-128x128">
                   <img src="~static/cat.jpg" alt="" />
                 </figure>
               </div>
             </div>
-            <div class="content">
+            <div class="content has-text-justified">
               현존하는 모든 고양잇과 동물들은 대략 1,500만년 전에 하나의
               조상으로부터 갈라져 나온 것으로 추측되며, 그 중 고양이의 조상으로
               여겨지는 것은 아프리카들고양이(Felis lybica)라는 동물이다. 중동에

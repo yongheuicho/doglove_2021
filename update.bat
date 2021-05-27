@@ -1,3 +1,3 @@
 git add --all
-git commit -m "make README.md and nuxt.config.js consistent"
+git commit -m "make text justified in index.vue"
 git push -u origin master
