@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add small font in index.vue"
+git commit -m "add tables for dog and cat info"
 git push -u origin master
