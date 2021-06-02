@@ -40,12 +40,12 @@
             >
           </p>
           <p class="content">
-            <a class="button is-warning" href="/dogMaleNames.json"
+            <a class="button is-primary is-small" href="/dogMaleNames.json"
               >JSON - 수컷 강아지 이름</a
             >
           </p>
           <p class="content">
-            <a class="button is-warning" href="/dogFemaleNames.json"
+            <a class="button is-primary is-small" href="/dogFemaleNames.json"
               >JSON - 암컷 강아지 이름</a
             >
           </p>
@@ -73,7 +73,7 @@
           <a href="https://github.com/sindresorhus/cat-names">
             sindresorhus/cat-names</a
           ><br />
-          <a class="button is-warning" href="/catNames.json"
+          <a class="button is-primary is-small" href="/catNames.json"
             >JSON - 고양이 이름</a
           ><br />
         </div>

@@ -1,3 +1,3 @@
 git add --all
-git commit -m "increase vertical spacing of tags and buttons"
+git commit -m "make buttons smaller in dogCatNames.vue"
 git push -u origin master
