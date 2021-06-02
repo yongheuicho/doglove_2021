@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add tables for dog and cat names"
+git commit -m "make link format consistent used for static and assets"
 git push -u origin master

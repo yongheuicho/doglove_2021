@@ -92,12 +92,12 @@
             <div class="columns">
               <div class="column">
                 <figure class="image container is-128x128">
-                  <img src="~assets/cat.jpg" alt="" />
+                  <img src="~/assets/cat.jpg" alt="" />
                 </figure>
               </div>
               <div class="column">
                 <figure class="image cotainer is-128x128">
-                  <img src="~static/cat.jpg" alt="" />
+                  <img src="~/static/cat.jpg" alt="" />
                 </figure>
               </div>
             </div>
