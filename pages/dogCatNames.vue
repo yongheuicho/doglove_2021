@@ -33,14 +33,22 @@
           </tbody>
         </table>
         <div class="content">
-          <span class="tag is-danger">출처</span>
-          <a href="https://github.com/sindresorhus/dog-names"
-            >sindresorhus/dog-names</a
-          ><br />
-          <span class="tag is-warning">JSON</span
-          ><a href="/dogMaleNames.json">수컷 강아지 이름</a><br />
-          <span class="tag is-warning">JSON</span
-          ><a href="/dogFemaleNames.json">암컷 강아지 이름</a><br />
+          <p class="content">
+            <span class="tag is-danger">출처</span>
+            <a href="https://github.com/sindresorhus/dog-names"
+              >sindresorhus/dog-names</a
+            >
+          </p>
+          <p class="content">
+            <a class="button is-warning" href="/dogMaleNames.json"
+              >JSON - 수컷 강아지 이름</a
+            >
+          </p>
+          <p class="content">
+            <a class="button is-warning" href="/dogFemaleNames.json"
+              >JSON - 암컷 강아지 이름</a
+            >
+          </p>
         </div>
       </div>
       <div class="column">
@@ -61,12 +69,13 @@
           </tbody>
         </table>
         <div class="content">
-          <span class="tag is-danger">출처</span>
-          <a href="https://github.com/sindresorhus/cat-names"
-            >sindresorhus/cat-names</a
+          <p class="tag is-danger">출처</p>
+          <a href="https://github.com/sindresorhus/cat-names">
+            sindresorhus/cat-names</a
           ><br />
-          <span class="tag is-warning">JSON</span
-          ><a href="/catNames.json">고양이 이름</a><br />
+          <a class="button is-warning" href="/catNames.json"
+            >JSON - 고양이 이름</a
+          ><br />
         </div>
       </div>
     </section>

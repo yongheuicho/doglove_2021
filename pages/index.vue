@@ -24,7 +24,7 @@
                 <figure class="image container is-128x128">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bulldog_adult_male.jpg/220px-Bulldog_adult_male.jpg"
-                    alt=""
+                    alt
                   />
                 </figure>
               </div>
@@ -32,7 +32,7 @@
                 <figure class="image container is-128x128">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brooks_Chase_Ranger_of_Jolly_Dogs_Jack_Russell.jpg"
-                    alt=""
+                    alt
                   />
                 </figure>
               </div>
@@ -96,12 +96,12 @@
             <div class="columns">
               <div class="column">
                 <figure class="image container is-128x128">
-                  <img src="~/assets/cat.jpg" alt="" />
+                  <img src="~/assets/cat.jpg" alt />
                 </figure>
               </div>
               <div class="column">
                 <figure class="image cotainer is-128x128">
-                  <img src="~/static/cat.jpg" alt="" />
+                  <img src="~/static/cat.jpg" alt />
                 </figure>
               </div>
             </div>
@@ -119,7 +119,9 @@
             </div>
             <div class="content">
               <span class="tag is-danger">출처</span>
-              <a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4">고양이 - 나무위키</a>
+              <a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4"
+                >고양이 - 나무위키</a
+              >
             </div>
           </div>
         </article>
