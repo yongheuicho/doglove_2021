@@ -36,7 +36,11 @@
           <span class="tag is-danger">출처</span>
           <a href="https://github.com/sindresorhus/dog-names"
             >sindresorhus/dog-names</a
-          >
+          ><br />
+          <span class="tag is-warning">JSON</span
+          ><a href="/dogMaleNames.json">수컷 강아지 이름</a><br />
+          <span class="tag is-warning">JSON</span
+          ><a href="/dogFemaleNames.json">암컷 강아지 이름</a><br />
         </div>
       </div>
       <div class="column">
@@ -57,19 +61,21 @@
           </tbody>
         </table>
         <div class="content">
-            <span class="tag is-danger">출처</span>
-            <a href="https://github.com/sindresorhus/cat-names"
-              >sindresorhus/cat-names</a
-            >
-          </div>
+          <span class="tag is-danger">출처</span>
+          <a href="https://github.com/sindresorhus/cat-names"
+            >sindresorhus/cat-names</a
+          ><br />
+          <span class="tag is-warning">JSON</span
+          ><a href="/catNames.json">고양이 이름</a><br />
+        </div>
       </div>
     </section>
   </div>
 </template>
 <script>
-import dogMaleNames from "~/assets/dogMaleNames.json";
-import dogFemaleNames from "~/assets/dogFemaleNames.json";
-import catNames from "~/assets/catNames.json";
+import dogMaleNames from "~/static/dogMaleNames.json";
+import dogFemaleNames from "~/static/dogFemaleNames.json";
+import catNames from "~/static/catNames.json";
 export default {
   data() {
     return {

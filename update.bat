@@ -1,3 +1,3 @@
 git add --all
-git commit -m "make link format consistent used for static and assets"
+git commit -m "revise the static links for dog and cat names"
 git push -u origin master

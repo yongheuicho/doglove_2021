@@ -11,12 +11,12 @@
         </p>
       </div>
     </section>
-    <hr>
+    <hr />
     <section class="columns">
       <div class="column">
         <article class="message">
           <div class="message-header">
-            <p>강아지(Dog) 정보</p>
+            <p>강아지<small>(Dog)</small> 정보</p>
           </div>
           <div class="message-body">
             <div class="columns">
@@ -52,6 +52,10 @@
               늑대와 달리 문제 상황에서 스스로 해결하지 않고 인간을 쳐다보는
               경향이 있다고 한다.
             </div>
+            <div class="content">
+              <span class="tag is-danger">출처</span>
+              <a href="https://namu.wiki/w/%EA%B0%9C">개 - 나무위키</a>
+            </div>
           </div>
         </article>
         <article class="notification">
@@ -86,7 +90,7 @@
       <div class="column">
         <article class="message">
           <div class="message-header">
-            <p>고양이(Cat) 정보</p>
+            <p>고양이<small>(Cat)</small> 정보</p>
           </div>
           <div class="message-body">
             <div class="columns">
@@ -112,6 +116,10 @@
               집고양이의 조상인 사막고양이도 덩치가 이랬다면 고양이는 인간에게
               길들여지는 과정에서 몸이 상당히 작아진 셈이다. 하지만 아직
               중형견에 육박하거나 덩치가 큰 품종도 존재한다. 메인쿤이나 랙돌 등.
+            </div>
+            <div class="content">
+              <span class="tag is-danger">출처</span>
+              <a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4">고양이 - 나무위키</a>
             </div>
           </div>
         </article>
