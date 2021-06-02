@@ -11,6 +11,7 @@
         </p>
       </div>
     </section>
+    <hr>
     <section class="columns">
       <div class="column">
         <article class="message">

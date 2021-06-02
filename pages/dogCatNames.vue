@@ -11,5 +11,72 @@
         </p>
       </div>
     </section>
+    <hr />
+    <section class="columns">
+      <div class="column">
+        <table class="table is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>수컷 강아지 이름</th>
+              <th>암컷 강아지 이름</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template v-for="pos in tableDogMaleNames.length">
+              <tr :key="pos">
+                <td>{{ pos }}</td>
+                <td>{{ tableDogMaleNames[pos - 1] }}</td>
+                <td>{{ tableDogFemaleNames[pos - 1] }}</td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <div class="content">
+          <span class="tag is-danger">출처</span>
+          <a href="https://github.com/sindresorhus/dog-names"
+            >sindresorhus/dog-names</a
+          >
+        </div>
+      </div>
+      <div class="column">
+        <table class="table is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>고양이 이름</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template v-for="pos in tableCatNames.length">
+              <tr :key="pos">
+                <td>{{ pos }}</td>
+                <td>{{ tableCatNames[pos - 1] }}</td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <div class="content">
+            <span class="tag is-danger">출처</span>
+            <a href="https://github.com/sindresorhus/cat-names"
+              >sindresorhus/cat-names</a
+            >
+          </div>
+      </div>
+    </section>
   </div>
 </template>
+<script>
+import dogMaleNames from "~/assets/dogMaleNames.json";
+import dogFemaleNames from "~/assets/dogFemaleNames.json";
+import catNames from "~/assets/catNames.json";
+export default {
+  data() {
+    return {
+      tableDogMaleNames: dogMaleNames.names,
+      tableDogFemaleNames: dogFemaleNames.names,
+      tableCatNames: catNames.names
+    };
+  }
+};
+</script>
