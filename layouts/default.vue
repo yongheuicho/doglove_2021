@@ -10,6 +10,11 @@
 						><i class="fas fa-file-signature"></i>&nbsp;강냥이 이름</nuxt-link
 					>
 				</li>
+				<li>
+					<nuxt-link to="/dogBreeds"
+						><i class="fas fa-globe-americas"></i>&nbsp;강냥이 품종</nuxt-link
+					>
+				</li>
 			</ul>
 		</nav>
 		<nuxt />
