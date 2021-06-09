@@ -6,9 +6,11 @@
 
 > https://www.doglove.tk/
 
+> https://thirsty-ride-9fcf90.netlify.app/
+
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
