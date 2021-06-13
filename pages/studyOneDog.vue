@@ -38,6 +38,36 @@
 				</div>
 			</div>
 		</section>
+		<section class="message is-warning is-light">
+			<div class="message-header">{{ dogName }}의 아품종</div>
+			<div class="message-body">
+				<div v-if="subbreeds.length > 0" class="tile is-ancestor">
+					<div class="tile box is-vertical">
+						<div class="tile">
+							<div
+								class="tile is-parent"
+								v-for="pos in subbreeds.length"
+								:key="pos"
+							>
+								<div class="tile is-child message">
+									<div class="message-header">
+										{{ subbreeds[pos - 1].toLowerCase() }}
+									</div>
+									<div class="message-body">
+										<figure class="image">
+											<img :src="subbreedImg[pos - 1]" alt="" />
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div v-else class="content">
+					<p class="subtitle">아품종 정보가 없습니다.</p>
+				</div>
+			</div>
+		</section>
 	</div>
 </template>
 <script>
@@ -48,11 +78,29 @@
 			const dogImages = await axios.get(
 				'https://dog.ceo/api/breed/' + dogName.toLowerCase() + '/images'
 			);
+			const subbreeds = await axios.get(
+				'https://dog.ceo/api/breed/' + dogName.toLowerCase() + '/list'
+			);
 			const dogImgArray = dogImages.data.message;
 			const dogImgSize = dogImgArray.length;
+			const subbreedArray = subbreeds.data.message;
+			let subbreedImg = [];
+			for (let breed of subbreedArray) {
+				const img = await axios.get(
+					'https://dog.ceo/api/breed/' +
+						dogName.toLowerCase() +
+						'/' +
+						breed.toLowerCase() +
+						'/images/random'
+				);
+				const imgUrl = img.data.message;
+				subbreedImg.push(imgUrl);
+			}
 			return {
 				dogName: dogName.toUpperCase(),
 				dogImages: dogImgArray,
+				subbreeds: subbreedArray,
+				subbreedImg: subbreedImg,
 			};
 		},
 	};
