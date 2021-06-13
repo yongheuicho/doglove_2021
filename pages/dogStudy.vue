@@ -4,7 +4,7 @@
 			<div class="hero-body">
 				<p class="title"><i class="fas fa-dog"></i> 강아지 공부</p>
 				<p class="subtile">
-					자세하게 공부하고 싶은 강아지 이름을 입력해주세요.
+					한 번에 한 품종씩 자세하게 공부합시다.
 				</p>
 			</div>
 		</section>
