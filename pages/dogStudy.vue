@@ -9,5 +9,36 @@
 			</div>
 		</section>
 		<hr />
+		<section class="box">
+			<form @submit.prevent="submitDogName">
+				<div class="field">
+					<label class="label">강아지 이름</label>
+					<div class="control">
+						<input type="text" v-model="dogName" />
+						<button class="button is-link" type="submit">공부하기</button>
+					</div>
+					<p class="help is-success">
+						자세히 공부하고 싶은 강아지 이름을 입력하세요.
+					</p>
+				</div>
+			</form>
+		</section>
 	</div>
 </template>
+<script>
+	export default {
+		data() {
+			return {
+				dogNameField: 'dogName',
+				dogName: null,
+			};
+		},
+		methods: {
+			submitDogName() {
+				this.$router.push(
+					'/studyOneDog?' + this.dogNameField + '=' + this.dogName
+				);
+			},
+		},
+	};
+</script>
