@@ -16,20 +16,17 @@
 			<div class="message-body">
 				<div class="tile is-ancestor">
 					<div class="tile box is-vertical">
-						<div class="tile">
-							<div class="tile is-parent" v-for="pos in 6" :key="pos">
-								<div class="tile is-child notification">
+						<div class="tile" v-for="col in getRowImgSize()" :key="col">
+							<div class="tile is-parent" v-for="pos in colImgSize" :key="pos">
+								<div
+									v-if="dogImages[pos - 1 + (col - 1) * colImgSize] != null"
+									class="tile is-child notification"
+								>
 									<figure class="image">
-										<img :src="dogImages[pos - 1]" alt="" />
-									</figure>
-								</div>
-							</div>
-						</div>
-						<div class="tile">
-							<div class="tile is-parent" v-for="pos in 6" :key="pos">
-								<div class="tile is-child notification">
-									<figure class="image">
-										<img :src="dogImages[pos - 1 + 6]" alt="" />
+										<img
+											:src="dogImages[pos - 1 + (col - 1) * colImgSize]"
+											alt=""
+										/>
 									</figure>
 								</div>
 							</div>
@@ -72,7 +69,33 @@
 </template>
 <script>
 	import axios from 'axios';
+	const rowImgSize = 3;
+	const colImgSize = 6;
+	const totImgSize = rowImgSize * colImgSize;
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * max); // 0~totImgSize-1
+	}
+	function getDiffRandomArray(arraySize) {
+		let set = new Set();
+		while (set.size < arraySize) set.add(getRandomInt(arraySize));
+		return set;
+	}
+	function getRandomImg(ar) {
+		if (ar.length <= totImgSize) return ar;
+		else {
+			let outAr = [];
+			let imgSet = getDiffRandomArray(totImgSize);
+			for (let pos of imgSet) outAr.push(ar[pos]);
+			return outAr;
+		}
+	}
 	export default {
+		data() {
+			return {
+				rowImgSize: rowImgSize,
+				colImgSize: colImgSize,
+			};
+		},
 		async asyncData(context) {
 			const dogName = context.route.query.dogName;
 			const dogImages = await axios.get(
@@ -98,10 +121,17 @@
 			}
 			return {
 				dogName: dogName.toUpperCase(),
-				dogImages: dogImgArray,
+				dogImages: getRandomImg(dogImgArray), // max: totImgSize
 				subbreeds: subbreedArray,
 				subbreedImg: subbreedImg,
 			};
+		},
+		methods: {
+			getRowImgSize() {
+				const rowImgSize = Math.ceil(this.dogImages.length / this.colImgSize);
+				// alert(rowImgSize);
+				return rowImgSize;
+			},
 		},
 	};
 </script>
