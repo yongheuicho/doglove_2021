@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "show a random dog image in dogBreeds.vue"
+git commit -m "make random dog images chosen by user in studyOneDog.vue"
 git push -u origin master
