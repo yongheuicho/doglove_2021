@@ -12,7 +12,12 @@
 				</li>
 				<li>
 					<nuxt-link to="/dogBreeds"
-						><i class="fas fa-globe-americas"></i>&nbsp;강냥이 품종</nuxt-link
+						><i class="fas fa-seedling"></i>&nbsp;강아지 품종</nuxt-link
+					>
+				</li>
+				<li>
+					<nuxt-link to="/dogStudy"
+						><i class="fas fa-school"></i>&nbsp;강아지 공부</nuxt-link
 					>
 				</li>
 			</ul>

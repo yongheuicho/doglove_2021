@@ -21,7 +21,7 @@
 					<template v-for="pos in tableDogKeys.length">
 						<tr :key="pos">
 							<td>{{ pos }}</td>
-							<td>{{ tableDogKeys[pos - 1] }}</td>
+							<td>{{ tableDogKeys[pos - 1].toUpperCase() }}</td>
 							<td>
 								<span
 									class="tag is-black"
@@ -34,7 +34,7 @@
 								<span v-else
 									><template v-for="subbreed in ar"
 										><span class="tag is-success" :key="subbreed">{{
-											subbreed
+											subbreed.toLowerCase()
 										}}</span
 										>&nbsp;</template
 									>
