@@ -11,6 +11,11 @@
 					>
 				</li>
 				<li>
+					<nuxt-link to="/dogCatFirebase"
+						><i class="fas fa-database"></i>&nbsp;강냥이 Firebase</nuxt-link
+					>
+				</li>
+				<li>
 					<nuxt-link to="/dogBreeds"
 						><i class="fas fa-seedling"></i>&nbsp;강아지 품종</nuxt-link
 					>
