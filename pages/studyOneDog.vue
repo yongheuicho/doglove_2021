@@ -11,6 +11,11 @@
 			</div>
 		</section>
 		<hr />
+		<div class="content">
+			<a href="/dogBreeds" class="button is-primary"
+				>더 많은 강아지 품종 알아보기</a
+			>
+		</div>
 		<section class="message">
 			<div class="message-header">{{ dogName }}의 여러 사진들</div>
 			<div class="message-body">
