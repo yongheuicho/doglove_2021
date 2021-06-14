@@ -16,17 +16,17 @@
 			<div class="message-body">
 				<div class="tile is-ancestor">
 					<div class="tile box is-vertical">
-						<div class="tile" v-for="col in getRowImgSize()" :key="col">
+						<div class="tile" v-for="row in getRowImgSize()" :key="row">
 							<div class="tile is-parent" v-for="pos in colImgSize" :key="pos">
 								<div
-									v-if="dogImages[pos - 1 + (col - 1) * colImgSize] != null"
 									class="tile is-child notification"
+									v-if="
+										((img = dogImages[pos - 1 + (row - 1) * colImgSize]),
+										img != null)
+									"
 								>
 									<figure class="image">
-										<img
-											:src="dogImages[pos - 1 + (col - 1) * colImgSize]"
-											alt=""
-										/>
+										<img :src="img" alt="" />
 									</figure>
 								</div>
 							</div>
@@ -40,19 +40,30 @@
 			<div class="message-body">
 				<div v-if="subbreeds.length > 0" class="tile is-ancestor">
 					<div class="tile box is-vertical">
-						<div class="tile">
+						<div class="tile" v-for="row in getRowSubimgSize()" :key="row">
 							<div
 								class="tile is-parent"
-								v-for="pos in subbreeds.length"
+								v-for="pos in getColSubimgSize()"
 								:key="pos"
 							>
-								<div class="tile is-child message">
+								<div
+									class="tile is-child message"
+									v-if="
+										((img =
+											subbreedImg[pos - 1 + (row - 1) * getColSubimgSize()]),
+										img != null)
+									"
+								>
 									<div class="message-header">
-										{{ subbreeds[pos - 1].toLowerCase() }}
+										{{
+											subbreeds[
+												pos - 1 + (row - 1) * getColSubimgSize()
+											].toLowerCase()
+										}}
 									</div>
 									<div class="message-body">
 										<figure class="image">
-											<img :src="subbreedImg[pos - 1]" alt="" />
+											<img :src="img" alt="" />
 										</figure>
 									</div>
 								</div>
@@ -131,6 +142,14 @@
 				const rowImgSize = Math.ceil(this.dogImages.length / this.colImgSize);
 				// alert(rowImgSize);
 				return rowImgSize;
+			},
+			getRowSubimgSize() {
+				const rowImgSize = Math.ceil(this.subbreeds.length / this.colImgSize);
+				return rowImgSize;
+			},
+			getColSubimgSize() {
+				const colImgSize = Math.min(this.subbreeds.length, this.colImgSize);
+				return colImgSize;
 			},
 		},
 	};
