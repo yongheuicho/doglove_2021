@@ -25,10 +25,7 @@
 							<div class="tile is-parent" v-for="pos in colImgSize" :key="pos">
 								<div
 									class="tile is-child notification"
-									v-if="
-										((img = dogImages[pos - 1 + (row - 1) * colImgSize]),
-										img != null)
-									"
+									v-if="(img = dogImages[pos - 1 + (row - 1) * colImgSize])"
 								>
 									<figure class="image">
 										<img :src="img" alt="" />
@@ -54,17 +51,12 @@
 								<div
 									class="tile is-child message"
 									v-if="
-										((img =
-											subbreedImg[pos - 1 + (row - 1) * getColSubimgSize()]),
-										img != null)
+										((totPos = pos - 1 + (row - 1) * getColSubimgSize()),
+										(img = subbreedImg[totPos]))
 									"
 								>
 									<div class="message-header">
-										{{
-											subbreeds[
-												pos - 1 + (row - 1) * getColSubimgSize()
-											].toLowerCase()
-										}}
+										{{ subbreeds[totPos].toLowerCase() }}
 									</div>
 									<div class="message-body">
 										<figure class="image">
