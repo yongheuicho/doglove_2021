@@ -76,6 +76,20 @@
 						</template>
 					</tbody>
 				</table>
+				<section class="box">
+					<form @submit.prevent="submitCatName">
+						<div class="field">
+							<label class="label">새로운 고양이 이름</label>
+							<div class="control">
+								<input type="text" v-model="newCatName" />
+								<button class="button is-link" type="submit">추천하기</button>
+							</div>
+							<p class="help is-success">
+								고양이 Firebase에 소개할 이름을 입력하세요.
+							</p>
+						</div>
+					</form>
+				</section>
 			</div>
 		</section>
 	</div>
@@ -92,6 +106,7 @@
 				catNames: [],
 				catNamesSort: [],
 				catSort: false,
+				newCatName: '',
 			};
 		},
 		mounted() {
@@ -153,6 +168,18 @@
 					.ref('dogs')
 					.child('size')
 					.set(newDogNames.length);
+			},
+			submitCatName() {
+				let newCatNames = this.catNames.slice(); // copy
+				newCatNames.push(this.newCatName);
+				fbDb
+					.ref('cats')
+					.child('names')
+					.set(newCatNames); // overwrite
+				fbDb
+					.ref('cats')
+					.child('size')
+					.set(newCatNames.length);
 			},
 		},
 	};
