@@ -51,6 +51,13 @@
 						</div>
 					</form>
 				</section>
+				<section class="notification is-info is-light">
+					<p class="tag is-danger">출처</p>
+					<a
+						href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=vetnow&logNo=221246618767"
+						>대한동물병원</a
+					>
+				</section>
 			</div>
 			<div class="column">
 				<div class="field">
@@ -89,6 +96,10 @@
 							</p>
 						</div>
 					</form>
+				</section>
+				<section class="notification is-info is-light">
+					<p class="tag is-danger">출처</p>
+					<a href="https://m.blog.naver.com/wilddog33/221800502572">해피누리</a>
 				</section>
 			</div>
 		</section>
