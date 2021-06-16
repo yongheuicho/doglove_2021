@@ -79,6 +79,18 @@
 								<td>강</td>
 								<td>포유강<small>(Mammalia)</small></td>
 							</tr>
+							<tr>
+								<td>목</td>
+								<td>식육목<small>(Canivora)</small></td>
+							</tr>
+							<tr>
+								<td>과</td>
+								<td>개과<small>(Canidae)</small></td>
+							</tr>
+							<tr>
+								<td>속</td>
+								<td>개속<small>(Canis)</small></td>
+							</tr>
 							<tr class="is-selected">
 								<td>종</td>
 								<td>늑대<small>(Canis lupus)</small></td>
@@ -145,6 +157,18 @@
 							<tr>
 								<td>강</td>
 								<td>포유강<small>(Mammalia)</small></td>
+							</tr>
+							<tr>
+								<td>목</td>
+								<td>식육목<small>(Carnivora)</small></td>
+							</tr>
+							<tr>
+								<td>과</td>
+								<td>고양이과<small>(Felidae)</small></td>
+							</tr>
+							<tr>
+								<td>속</td>
+								<td>고양이속<small>(Felis)</small></td>
 							</tr>
 							<tr class="is-selected">
 								<td>종</td>
